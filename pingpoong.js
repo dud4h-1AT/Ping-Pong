@@ -37,7 +37,7 @@ function movimentoBolinha(){
   if(yBolinha + raio > height || yBolinha-raio < 0){
     velocidadeYBolinha *= -1}}
 
-    function raquetes(xRaquete,yRaquete){
+function raquetes(xRaquete,yRaquete){
   rect(xRaquete,yRaquete,10,90)
   
 }
