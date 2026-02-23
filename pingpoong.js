@@ -26,3 +26,13 @@ createCanvas(600,400);
 
 function draw(){
 }
+
+function movimentoBolinha(){
+  circle(xBolinha,diametro);
+  
+  xBolinha += velocidadeXBolinha;
+  yBolinha += velocidadeYBolinha;
+  if(xBolinha + raio > width || xBolinha-raio < 0){
+  };
+  if(yBolinha + raio > height || yBolinha-raio < 0){
+    velocidadeYBolinha *= -1}};
