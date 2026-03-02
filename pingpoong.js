@@ -1,8 +1,9 @@
-Criar Bolinha
+//Criar Bolinha
 let raio = 7.5;
 let xBolinha = 100;
 let yBolinha = 200;
 let diametro = raio * 2;
+
 
 //Velocidade da bolinha
 let velocidadeXBolinha = 6;
@@ -21,7 +22,6 @@ let meusPontos = 0;
 let pontosOponentes = 0;
 
 // dificuladde
-
 let dificuldade = "Normal";
 let trilha,ponto,raquetada;
 
@@ -48,6 +48,17 @@ function draw(){
   
   if(keyIsDown(DOWN_ARROW)){
     yRaquete += 10}
+  
+  if(xBolinha -raio < xRaquete + 10 &
+    yBolinha -raio < yRaquete + 90 &
+    yBolinha +raio > yRaquete ){
+   velocidadeXBolinha *= -1;
+   raquetada.play()}
+  if(xBolinha +raio > xRaqueteOponente &
+    yBolinha -raio < yRaqueteOponente + 90 &
+    yBolinha +raio > yRaqueteOponente) {
+   velocidadeXBolinha *= -1;
+   raquetada.play()}
   
 }
 
